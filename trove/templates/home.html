@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{%load static%}
+{% block title %}Home{% endblock %}
+{%block content%}
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride='carousel'>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/front_toy.jpeg' %}" class="d-block w-100" alt="Toy" style="height:450px; object-fit:cover;width: 150px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/barbie.jpeg' %}" class="d-block w-100" alt="Toy" style="height:450px; object-fit:cover;width: 150px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/light.jpeg' %}" class="d-block w-100"alt="Toy" style="height:450px; object-fit:cover;width: 150px;"> 
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container">
+   <h1>Welcome to Trove Toys</h1>
+   <p class="text-center">Discover a treasure chest of toys, games and gifts for every age.<br> From classic dolls to brain-teasing board games, we've got something to make every child's eyes light up.</p>
+</div>
+{% endblock%}
